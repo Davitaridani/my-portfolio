@@ -7,6 +7,8 @@ import { FaInstagram } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { GrFacebookOption } from "react-icons/gr";
 import { FaGitlab } from "react-icons/fa";
+import { BsCloudArrowDownFill } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Hero = () => {
 	return (
@@ -16,12 +18,12 @@ const Hero = () => {
 					{/* Content Left */}
 					<div className="w-full md:basis-1/2">
 						<h3 className="text-headingColor font-semibold text-[16px]">Hello Word</h3>
-						<h5 className="font-bold text-headingColor text-[40px] leading-[35px] sm:leading-[45px] mt-5">I'm Ahmat Davit <br />Front End Developer</h5>
+						<h5 className="font-bold text-headingColor text-[40px] leading-[35px] sm:leading-[45px] mt-5">I'm Ahmat Davit <br />a Front End Developer</h5>
 						<div className="flex items-center gap-6 mt-7">
 
-							<a href="" ><button className='flex items-center bg-primaryColor text-white font-medium gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'><HiOutlineMail /> Hire Me</button>
+							<a href="" ><button className='flex items-center bg-primaryColor text-white font-medium gap-1 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'><HiOutlineMail /> Hire Me</button>
 							</a>
-							<a href="#portfolio" className="text-smallTextColor font-semibold text-base border-b border-solid border-smallTextColor">See Portfolio</a>
+							<a href="#portfolio" className="flex items-center text-smallTextColor font-semibold text-base py-2 px-4 rounded-[8px] border border-solid border-smallTextColor gap-1 hover:border-primaryColor hover:bg-primaryColor hover:text-white ease-in duration-300"> <BsCloudArrowDownFill /> Download CV</a>
 						</div>
 						<p className='flex gap-1 text-headingColor font-medium mt-12 text-[15px] leading-7 sm:pl-14 sm:pr-10'>
 							<span className='pt-2 '> <TbApps /> </span>
@@ -38,6 +40,9 @@ const Hero = () => {
 							</span>
 							<span>
 								<a href="#" className="text-smallTextColor text-sm font-semibold"><GrFacebookOption /></a>
+							</span>
+							<span>
+								<a href="#" className="text-smallTextColor text-sm font-semibold"><FaLinkedinIn /></a>
 							</span>
 							<span>
 								<a href="#" className="text-smallTextColor text-sm font-semibold"><FaGitlab /></a>

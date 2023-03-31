@@ -3,6 +3,7 @@ import React from "react";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Hero from "./components/sections/Hero";
+import Portfolio from "./components/sections/Portfolio";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <main>
         <Hero />
+        <Portfolio />
       </main>
       <Footer />
     </>

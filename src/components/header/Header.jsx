@@ -38,7 +38,7 @@ const Header = () => {
 
 					{/* Btn menu */}
 					<div className="flex items-center gap-4">
-						<button className="flex items-center gap-2 text-smallTextColor font-semibold border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-smallTextColor hover:text-white ease-in duration-400">
+						<button className="flex items-center gap-2 text-smallTextColor font-semibold border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-smallTextColor hover:text-white ease-in duration-300">
 							Let's Talk
 							<BsSend />
 						</button>
