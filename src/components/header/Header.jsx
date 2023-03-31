@@ -1,10 +1,40 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import { BsSend } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
+
+	const headerRef = useRef(null)
+
+	const headerSticky = () => {
+		window.addEventListener("scroll", () => {
+			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				headerRef.current.classList.add("header-sticky")
+			} else {
+				headerRef.current.classList.remove("header-sticky")
+			}
+		})
+	}
+
+	useEffect(() => {
+		headerSticky()
+		return window.removeEventListener("scroll", headerSticky)
+	}, [])
+
+	const handleClick = e => {
+		e.preventDefault();
+
+		const targetAttr = e.target.getAttribute("href");
+		const locationTarget = document.querySelector(targetAttr).offsetTop;
+
+		window.scrollTo({
+			top: locationTarget - 80,
+			left: 0,
+		})
+	}
+
 	return (
-		<header className="w-full h-[80px] leading-[80px] flex items-center">
+		<header ref={headerRef} className="w-full h-[80px] leading-[80px] flex items-center ">
 			<div className="container">
 				<div className="flex items-center justify-between">
 					{/* Logo */}
@@ -21,16 +51,16 @@ const Header = () => {
 					<div className="menu">
 						<ul className='flex items-center gap-10'>
 							<li>
-								<a className="text-smallTextColor font-semibold" href="#about">About</a>
+								<a onClick={handleClick} className="text-smallTextColor font-semibold" href="#about">About</a>
 							</li>
 							<li>
-								<a className="text-smallTextColor font-semibold" href="#service">Service</a>
+								<a onClick={handleClick} className="text-smallTextColor font-semibold" href="#service">Service</a>
 							</li>
 							<li>
-								<a className="text-smallTextColor font-semibold" href="#portfolio">Portfolio</a>
+								<a onClick={handleClick} className="text-smallTextColor font-semibold" href="#portfolio">Portfolio</a>
 							</li>
 							<li>
-								<a className="text-smallTextColor font-semibold" href="#contact">Contact</a>
+								<a onClick={handleClick} className="text-smallTextColor font-semibold" href="#contact">Contact</a>
 							</li>
 						</ul>
 					</div>
