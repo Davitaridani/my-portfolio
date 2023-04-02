@@ -7,6 +7,18 @@ import { SiWhatsapp } from "react-icons/si";
 
 const Footer = () => {
 
+	const handleClick = e => {
+		e.preventDefault();
+
+		const targetAttr = e.target.getAttribute("href");
+		const locationTarget = document.querySelector(targetAttr).offsetTop;
+
+		window.scrollTo({
+			top: locationTarget - 80,
+			left: 0,
+		})
+	}
+
 	const dataIcon = [
 		{
 			icon: <FiInstagram />,
@@ -43,16 +55,16 @@ const Footer = () => {
 						<h3 className='text-slate-200 text-[17px] font-semibold mb-3'>Links</h3>
 						<ul className="text-slate-300 text-sm">
 							<li className='mb-2'>
-								<a href="#about">About</a>
+								<a onClick={handleClick} href="#about">About</a>
 							</li>
 							<li className='mb-2'>
-								<a href="#skill">Skill</a>
+								<a onClick={handleClick} href="#skill">Skill</a>
 							</li>
 							<li className='mb-2'>
-								<a href="#portfolio">Portfolio</a>
+								<a onClick={handleClick} href="#portfolio">Portfolio</a>
 							</li>
 							<li className='mb-2'>
-								<a href="#contact">Contact</a>
+								<a onClick={handleClick} href="#contact">Contact</a>
 							</li>
 						</ul>
 					</div>

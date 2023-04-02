@@ -48,11 +48,11 @@ const Portfolio = () => {
 					</div>
 				</div>
 
-				<div className="flex items-center gap-4 flex-wrap mt-12">
+				<div className="flex items-center gap-4 flex-wrap mt-12 overflow-hidden">
 					{portfolio?.slice(0, nextItems)?.map((portfolio, index) => (
-						<div className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.3%] relative z-[1]" key={index}>
-							<div className="img-portfolio">
-								<img src={portfolio.img} alt="portfolio" className="rounded-[8px]" />
+						<div className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.3%] relative z-[1]  " key={index}>
+							<div className="img-portfolio overflow-hidden">
+								<img src={portfolio.img} alt="portfolio" className="rounded-[8px] group-hover:scale-110 ease-in-out duration-500 cursor-pointer" />
 							</div>
 							<div className="p-3">
 								<h3 className="text-[20px] font-semibold mb-4">{portfolio.title}</h3>

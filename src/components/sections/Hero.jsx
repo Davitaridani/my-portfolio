@@ -27,7 +27,7 @@ const Hero = () => {
 						<div className="flex items-center gap-4 mt-14">
 							<span className="text-smallTextColor text-sm font-semibold">Follow Me : </span>
 							{iconHero.map((item, index) => (
-								<span className='border-solid border-2 border-primaryColor flex items-center justify-center h-[30px] w-[30px] rounded-full hover:bg-primaryColor duration-300 ease-in cursor-pointer group' key={index}>
+								<span className='border-solid border-2 border-primaryColor flex items-center justify-center h-[30px] w-[30px] rounded-full hover:bg-primaryColor duration-300 ease-in cursor-pointer group ' key={index}>
 									<a href={item.link} target="_blank" rel="noreferrer" className="text-smallTextColor duration-300 ease-in group-hover:text-white text-base font-semibold ">{item.icon}</a>
 								</span>
 							))}
@@ -35,8 +35,8 @@ const Hero = () => {
 					</div>
 
 					<div className="basis-1/3 mt-10 sm:mt-0">
-						<div className="img-profile flex items-center justify-center">
-							<img src={imgHero} alt="" className="rounded-tl-[125px] rounded-tr-[125px] rounded-bl-[25px] rounded-br-[25px] mt-8" />
+						<div className="img-profile flex items-center justify-center overflow-hidden">
+							<img src={imgHero} alt="" className="rounded-tl-[125px] rounded-tr-[125px] rounded-bl-[25px] rounded-br-[25px] mt-8 animate-shake" />
 						</div>
 					</div>
 

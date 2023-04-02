@@ -15,7 +15,7 @@ const Skill = () => {
 							{imgSkill[0].frontEnd.map(({ id, img, title, text }) => (
 								<div className="text-center mb-4" key={id}>
 									<div className="">
-										<img src={img} alt="" className="mx-auto flex justify-center h-8 mb-3 object-contain  hover:scale-125 duration-300 ease-in  cursor-pointer" />
+										<img src={img} alt="" className="mx-auto flex justify-center h-8 mb-3 object-contain  hover:scale-125 duration-300 ease-in  cursor-pointer animate-pulse" />
 									</div>
 									<h3 className="font-semibold leading-5 text-base">{title}</h3>
 									<p className="text-gray-500 tracking-wide text-sm">{text}</p>
@@ -30,7 +30,7 @@ const Skill = () => {
 							{imgSkill[1].backEnd.map((item, index) => (
 								<div className="text-center mb-4" key={index}>
 									<div className="">
-										<img src={item.img} alt="" className="mx-auto h-8 flex justify-center mb-3 object-contain  hover:scale-125 duration-300 ease-in cursor-pointer" />
+										<img src={item.img} alt="" className="mx-auto h-8 flex justify-center mb-3 object-contain  hover:scale-125 duration-300 ease-in cursor-pointer animate-pulse" />
 									</div>
 									<h3 className="font-semibold leading-5 text-base">{item.title}</h3>
 									<p className="text-gray-500 tracking-wide text-sm">{item.text}</p>
