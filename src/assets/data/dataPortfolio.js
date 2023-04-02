@@ -32,34 +32,6 @@ import ps from "../img/ps.png";
 import express from "../img/expressjs.png";
 import nodeJs from "../img/node-js.png";
 
-export const qualification = [
-  {
-    id: 1,
-    year: "2016 - 2019",
-    school: "High school of SMAN 01 Balung,Jember",
-    text: "Student",
-  },
-
-  {
-    id: 2,
-    year: "2019 - 2022",
-    school: "Politeknik Negeri Jember",
-    text: "Student",
-  },
-  {
-    id: 3,
-    year: "Nov 2021 - April 2022",
-    school: "Mark Design, Surabaya",
-    text: "Magang",
-  },
-  {
-    id: 4,
-    year: "Feb 2023 - Agust 2023 / NOW",
-    school: "Fullstack - Binar Academy",
-    text: "Student",
-  },
-];
-
 export const imgPortfolio = [
   {
     id: 1,
@@ -81,12 +53,51 @@ export const imgPortfolio = [
   },
 ];
 
+export const qualification = [
+  {
+    year: "2016 - 2019",
+    school: "High school of SMAN 01 Balung, Jember",
+    text: "Student",
+  },
+
+  {
+    year: "2019 - 2022",
+    school: "Politeknik Negeri Jember",
+    text: "Student",
+  },
+  {
+    year: "Nov 2021 - April 2022",
+    school: "Mark Design, Surabaya",
+    text: "Magang",
+  },
+  {
+    year: "Feb 2023 - Agust 2023 / NOW",
+    school: "Fullstack - Bootcamp Binar Academy",
+    text: "Student",
+  },
+];
+
 export const iconHero = [
-  <FaInstagram />,
-  <IoLogoGithub />,
-  <FaGitlab />,
-  <GrFacebookOption />,
-  <FaLinkedinIn />,
+  {
+    icon: <FaInstagram />,
+    link: "https://www.instagram.com/davitt_ad/",
+  },
+  {
+    icon: <IoLogoGithub />,
+    link: "https://github.com/Davitaridani",
+  },
+  {
+    icon: <FaGitlab />,
+    link: "https://gitlab.com/Davitaridani",
+  },
+  {
+    icon: <GrFacebookOption />,
+    link: "https://www.facebook.com/davit.aridani",
+  },
+  {
+    icon: <FaLinkedinIn />,
+    link: "https://www.linkedin.com/in/ahmat-davit-ari-dani-1125721a1/",
+  },
 ];
 
 export const imgSkill = [

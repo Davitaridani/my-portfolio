@@ -5,6 +5,14 @@ import logoProfile from "../../assets/img/profile-about.jpg";
 
 const Header = () => {
 
+	const navLinks = [
+		{ path: "#home", display: "Home", active: true, },
+		{ path: "#about", display: "About", active: false, },
+		{ path: "#skill", display: "Skill", active: false, },
+		{ path: "#portfolio", display: "Portfolio", active: false, },
+		{ path: "#contact", display: "Contact", active: false, }
+	]
+
 	const headerRef = useRef(null)
 
 	const headerSticky = () => {
@@ -48,29 +56,16 @@ const Header = () => {
 						</div>
 					</div>
 
-					{/* menu Start */}
 					<div className="menu">
 						<ul className='flex items-center gap-10'>
-							<li>
-								<a onClick={handleClick} className="text-smallTextColor font-semibold" href="#about">About</a>
-							</li>
-							<li>
-								<a onClick={handleClick} className="text-smallTextColor font-semibold" href="#skill">Skill</a>
-							</li>
-							<li>
-								<a onClick={handleClick} className="text-smallTextColor font-semibold" href="#service">Service</a>
-							</li>
-							<li>
-								<a onClick={handleClick} className="text-smallTextColor font-semibold" href="#portfolio">Portfolio</a>
-							</li>
-							<li>
-								<a onClick={handleClick} className="text-smallTextColor font-semibold" href="#contact">Contact</a>
-							</li>
+							{navLinks.map((item, index) => (
+								<li key={index}>
+									<a onClick={handleClick} className="text-smallTextColor font-semibold" href={item.path}>{item.display}</a>
+								</li>
+							))}
 						</ul>
 					</div>
-					{/* menu End */}
 
-					{/* Btn menu */}
 					<div className="flex items-center gap-4">
 						<button className="flex items-center gap-2 text-smallTextColor font-semibold border border-solid border-smallTextColor py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-smallTextColor hover:text-white ease-in duration-300">
 							Let's Talk
@@ -82,9 +77,7 @@ const Header = () => {
 						</span>
 					</div>
 				</div>
-
 			</div>
-
 		</header >
 	)
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { imgPortfolio } from "../../assets/data/dataPortfolio";
-import Modal from "../UI/Modal";
+// import Modal from "../UI/Modal";
 import { TbWorldWww } from "react-icons/tb";
 import { AiFillGithub } from "react-icons/ai";
 
@@ -9,18 +9,18 @@ const Portfolio = () => {
 	const [nextItems, setNextItems] = useState(6)
 	const [portfolio, setPortfolio] = useState(imgPortfolio)
 	const [selectTab, setSelectTab] = useState("all")
-	const [showModal, setShowModal] = useState(false)
-	const [activeID, setActiveID] = useState(null)
+	// const [showModal, setShowModal] = useState(false)
+	// const [activeID, setActiveID] = useState(null)
 
 
 	const handleLoadMore = () => {
 		setNextItems(prev => prev + 3)
 	}
 
-	const handleShowModal = id => {
-		setShowModal(true)
-		setActiveID(id)
-	}
+	// const handleShowModal = id => {
+	// 	setShowModal(true)
+	// 	setActiveID(id)
+	// }
 
 	useEffect(() => {
 		if (selectTab === "all") {
@@ -78,7 +78,6 @@ const Portfolio = () => {
 										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-headingColor ease-in duration-200" href="#"><span><AiFillGithub /></span> Source Code</a>
 								</div> */}
 
-
 								{/* <div className="flex items-center gap-3 mt-5 mb-6">
 									{portfolio.siteUrl.map(item => (
 
@@ -120,8 +119,7 @@ const Portfolio = () => {
 				</div>
 
 				<div className="text-center mt-8">
-					{
-						nextItems < portfolio.length && imgPortfolio.length > 6 &&
+					{nextItems < portfolio.length && imgPortfolio.length > 6 &&
 						<button onClick={handleLoadMore} className="text-white bg-smallTextColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-medium ease-in duration-300">Load More</button>
 					}
 				</div>

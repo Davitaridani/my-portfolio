@@ -1,54 +1,68 @@
-import React from 'react'
+import React from 'react';
+import { AiFillGithub } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
-import { RiFacebookFill } from "react-icons/ri";
-import { RiLinkedinBoxLine } from "react-icons/ri"
-import { AiFillGithub } from "react-icons/ai"
+import { RiFacebookFill, RiLinkedinBoxLine } from "react-icons/ri";
 import { SiWhatsapp } from "react-icons/si";
+
 
 const Footer = () => {
 
 	const dataIcon = [
-
-		{ icon: <FiInstagram /> },
-		{ icon: <RiFacebookFill /> },
-		{ icon: <RiLinkedinBoxLine /> },
-		{ icon: <AiFillGithub /> },
-		{ icon: <SiWhatsapp /> }
+		{
+			icon: <FiInstagram />,
+			link: "https://www.instagram.com/davitt_ad/",
+		},
+		{
+			icon: <RiFacebookFill />,
+			link: "https://www.facebook.com/davit.aridani",
+		},
+		{
+			icon: <RiLinkedinBoxLine />,
+			link: "https://www.linkedin.com/in/ahmat-davit-ari-dani-1125721a1/",
+		},
+		{
+			icon: <AiFillGithub />,
+			link: "https://github.com/Davitaridani",
+		},
+		{
+			icon: <SiWhatsapp />,
+			link: "https://api.whatsapp.com/send?phone=6282139948735"
+		}
 	]
+
 	return (
-		<footer className="bg-headingColor pt-12 pb-7 " id="footer">
+		<footer className="bg-headingColor pt-12 pb-7" id="footer">
 			<div className="container">
 				<div className="flex mb-10 max-w-[80%] mx-auto">
-
 					<div className="basis-1/3">
-						<h3 className='text-white text-[25px] font-semibold'>Davit</h3>
-						<p>Front End Developer </p>
+						<h3 className='text-slate-200 text-[25px] font-semibold'>Davit</h3>
+						<p className="text-slate-300">Front End Developer </p>
 					</div>
 
 					<div className="basis-1/3">
-						<h3 className='text-slate-400 text-[17px] font-semibold mb-3'>Links</h3>
-						<ul className="text-slate-400 text-sm"	>
+						<h3 className='text-slate-200 text-[17px] font-semibold mb-3'>Links</h3>
+						<ul className="text-slate-300 text-sm">
 							<li className='mb-2'>
-								<a href="">About</a>
+								<a href="#about">About</a>
 							</li>
 							<li className='mb-2'>
-								<a href="">Skill</a>
+								<a href="#skill">Skill</a>
 							</li>
 							<li className='mb-2'>
-								<a href="">Portfolio</a>
+								<a href="#portfolio">Portfolio</a>
 							</li>
 							<li className='mb-2'>
-								<a href="">Contact</a>
+								<a href="#contact">Contact</a>
 							</li>
 						</ul>
 					</div>
 
 					<div className="">
-						<h3 className='mb-3'>Follow Me:</h3>
+						<h3 className='mb-3 text-slate-200 text-[17px] font-medium'>Follow Me:</h3>
 						<div className="flex items-center justify-center gap-3 mb-3">
 							{dataIcon.map((item, index) => (
 								<div key={index}>
-									<a href='#' className='text-gray-300 text-[17px] flex gap-4 border border-solid h-[35px] w-[35px] justify-center items-center rounded-full hover:bg-slate-300 hover:text-headingColor duration-200 ease-in'>
+									<a href={item.link} target='_blank' rel="noreferrer" className='text-gray-300 text-[17px] flex gap-4 border border-solid h-[35px] w-[35px] justify-center items-center rounded-full hover:bg-slate-300 hover:text-headingColor duration-200 ease-in'>
 										{item.icon}
 									</a>
 								</div>
