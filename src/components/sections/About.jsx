@@ -1,5 +1,5 @@
 import React from 'react'
-import imgAbout from "../../assets/img/profile-about.jpg";
+import { qualification } from "../../assets/data/dataPortfolio";
 import { RiInstagramFill } from "react-icons/ri";
 import { BsFacebook } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
@@ -14,16 +14,25 @@ const About = () => {
 		{ icon: <RiWhatsappFill /> }
 	]
 
-
-
 	return (
 		<section id="about">
 			<div className="container">
 				<h1 className="text-center mb-8 font-bold text-3xl">About Me</h1>
 				<div className="flex flex-1">
-					<div className="w-full basis-1/2 flex items-center justify-center">
-						<img src={imgAbout} alt="" className="h-28 w-28 object-contain object-center rounded-full bg-white shadow-md" />
+					<div className="w-full basis-1/2  overflow-y-scroll h-[250px] scrollbar-hide  ">
+						<ol className='relative border-l border-gray-700 '>
+							{qualification.map((item, index) => {
+								<li key={item.index}>
+									<div className='absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border-2 border-primary dark:border-gray-200 bg-light dark:bg-primary'>
+										<h3 className="text-teal-700">{item.year}</h3>
+										<p>{item.school}</p>
+										<span>{item.text}</span>
+									</div>
+								</li>
+							})}
+						</ol>
 					</div>
+
 					<div className="w-full basis-1/2 ">
 						<div className="mb-3">
 							<h3 className="text-3xl font-bold text-headingColor leading-8 ">Ahmat Davit</h3>

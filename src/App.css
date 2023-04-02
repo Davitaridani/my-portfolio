@@ -35,3 +35,12 @@ section {
   box-shadow: 3px 3px -8px 3px #ddd;
   z-index: 99;
 }
+
+::selection {
+  background: #8873ef;
+  color: #fff;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

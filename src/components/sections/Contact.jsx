@@ -11,24 +11,24 @@ const Contact = () => {
 				<div className="flex  gap-4">
 					<div className="w-full basis-1/3  bg-white shadow-md px-4 py-7">
 						<div className="flex items-center gap-[10px] mb-5">
-							<a href="#" className='border-2 border-solid  text-[20px] flex items-center justify-center text-primaryColor border-primaryColor h-9 w-9 rounded-full '><MdEmail /></a>
+							<a href="#" className='border-2 border-solid  text-[20px] flex items-center justify-center text-primaryColor border-primaryColor h-9 w-9 rounded-full hover:bg-smallTextColor hover:text-white duration-300 ease-in hover:border-smallTextColor '><MdEmail /></a>
 							<div className="">
-								<h3 className='text-headingColor text-base leading-5 font-semibold'>Email:</h3>
+								<h3 className='text-headingColor text-base leading-4 font-semibold'>Email:</h3>
 								<a href='#' className="text-sm text-gray-500 font-medium">davitaridani@gmail.com</a>
 							</div>
 						</div>
 						<div className="flex items-center gap-[10px] mb-5">
-							<a href="#" className='border-2 border-solid  text-[20px] flex items-center justify-center text-primaryColor border-primaryColor h-9 w-9 rounded-full '><RiWhatsappFill /></a>
+							<a href="#" className='border-2 border-solid  text-[20px] flex items-center justify-center text-primaryColor border-primaryColor h-9 w-9 rounded-full hover:bg-smallTextColor hover:text-white duration-300 ease-in hover:border-smallTextColor'><RiWhatsappFill /></a>
 							<div className="">
-								<h3 className='text-headingColor text-base leading-5 font-semibold'>Whatsapp:</h3>
-								<p className="text-sm text-gray-500 font-medium">+62 821-3994-8735</p>
+								<h3 className='text-headingColor text-base leading-4 font-semibold'>Whatsapp:</h3>
+								<a href="#" className="text-sm text-gray-500 font-medium">+62 821-3994-8735</a>
 							</div>
 						</div>
 						<div className="flex items-center gap-[10px] mb-5">
-							<span className='border-2 border-solid  text-[20px] flex items-center justify-center text-primaryColor border-primaryColor h-9 w-9 rounded-full '><MdLocationPin /></span>
+							<span className='border-2 border-solid  text-[20px] flex items-center justify-center text-primaryColor border-primaryColor h-9 w-9 rounded-full  hover:bg-smallTextColor hover:text-white duration-300 ease-in hover:border-smallTextColor'><MdLocationPin /></span>
 							<div className="">
-								<h3 className='text-headingColor text-base leading-5 font-semibold'>Email:</h3>
-								<p className="text-sm text-gray-500 font-medium">Location</p>
+								<h3 className='text-headingColor text-base leading-4 font-semibold'>Location:</h3>
+								<p className="text-sm text-gray-500 font-medium">Kec.Balung Kab. Jember, Jawa Timur.</p>
 							</div>
 						</div>
 

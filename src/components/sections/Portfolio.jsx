@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
-import data from "../../assets/data/dataPortfolio";
+import { imgPortfolio } from "../../assets/data/dataPortfolio";
 import Modal from "../UI/Modal";
+import { TbWorldWww } from "react-icons/tb";
+import { AiFillGithub } from "react-icons/ai";
 
 const Portfolio = () => {
 
 	const [nextItems, setNextItems] = useState(6)
-	const [portfolio, setPortfolio] = useState(data)
+	const [portfolio, setPortfolio] = useState(imgPortfolio)
 	const [selectTab, setSelectTab] = useState("all")
 	const [showModal, setShowModal] = useState(false)
 	const [activeID, setActiveID] = useState(null)
-
 
 
 	const handleLoadMore = () => {
@@ -23,12 +24,12 @@ const Portfolio = () => {
 
 	useEffect(() => {
 		if (selectTab === "all") {
-			setPortfolio(data)
+			setPortfolio(imgPortfolio)
 		} else if (selectTab === "Front End") {
-			const filterData = data.filter(item => item.category === "Front End")
+			const filterData = imgPortfolio.filter(item => item.category === "Front End")
 			setPortfolio(filterData)
 		} else if (selectTab === "UI/UX") {
-			const filterData = data.filter(item => item.category === "UI/UX")
+			const filterData = imgPortfolio.filter(item => item.category === "UI/UX")
 			setPortfolio(filterData)
 		}
 	}, [selectTab])
@@ -48,15 +49,70 @@ const Portfolio = () => {
 				</div>
 
 				<div className="flex items-center gap-4 flex-wrap mt-12">
-
 					{portfolio?.slice(0, nextItems)?.map((portfolio, index) => (
 						<div className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.3%] relative z-[1]" key={index}>
 							<div className="img-portfolio">
-								<img src={portfolio.imgUrl} alt="portfolio" className="rounded-[8px]" />
+								<img src={portfolio.img} alt="portfolio" className="rounded-[8px]" />
 							</div>
-							<div className="w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block">
-								<div className='w-full h-full flex items-center justify-center'>
-									<button onClick={() => handleShowModal(portfolio.id)} className="text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-medium ease-in duration-300">See Detail</button>
+							<div className="p-3">
+								<h3 className="text-[20px] font-semibold mb-4">{portfolio.title}</h3>
+								<div className="gap-2 flex items-center flex-wrap">
+									<h3 className="text-[15px] font-medium">Technology:</h3>
+									{portfolio.technologies.map((item, index) => (
+										<span
+											key={index}
+											className="bg-gray-200 py-[2px] px-[4px] rounded-[5px] text-[12px] leading-0 flex items-center"
+										>{item}</span>
+									))}
+								</div>
+
+								{/* <div className="flex items-center gap-3 mt-5 mb-6">
+									<a
+										target="_blank"
+										rel="noreferrer"
+										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-headingColor ease-in duration-200" href="#"><span><TbWorldWww /></span> Demo</a>
+
+									<a
+										target="_blank"
+										rel="noreferrer"
+										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-headingColor ease-in duration-200" href="#"><span><AiFillGithub /></span> Source Code</a>
+								</div> */}
+
+
+								{/* <div className="flex items-center gap-3 mt-5 mb-6">
+									{portfolio.siteUrl.map(item => (
+
+										<a
+											target="_blank"
+											rel="noreferrer"
+											className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-headingColor ease-in duration-200" href={item.demo}><TbWorldWww /> Demo</a>
+									))}
+
+									{portfolio.siteUrl.map(data => {
+										<a
+											href={data.sourceCode}
+											target="_blank"
+											rel="noreferrer"
+											className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-[15px] hover:bg-headingColor ease-in duration-200"
+										><span><AiFillGithub /></span>Source Code</a>
+									})}
+
+								</div> */}
+
+								<div className="flex items-center gap-3 mt-5 mb-6">
+									<a
+										target="_blank"
+										rel="noreferrer"
+										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-headingColor ease-in duration-200" href={portfolio.demo}><TbWorldWww /> Demo
+									</a>
+
+									<a
+										href={portfolio.sourceCode}
+										target="_blank"
+										rel="noreferrer"
+										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-headingColor ease-in duration-200"
+									><span><AiFillGithub /></span>Source Code
+									</a>
 								</div>
 							</div>
 						</div>
@@ -65,16 +121,15 @@ const Portfolio = () => {
 
 				<div className="text-center mt-8">
 					{
-						nextItems < portfolio.length && data.length > 6 &&
+						nextItems < portfolio.length && imgPortfolio.length > 6 &&
 						<button onClick={handleLoadMore} className="text-white bg-smallTextColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-medium ease-in duration-300">Load More</button>
 					}
 				</div>
-			</div>
-
-			{
+			</div >
+			{/* {
 				showModal && <Modal setShowModal={setShowModal} actvieID={activeID} />
-			}
-		</section>
+			} */}
+		</section >
 	)
 }
 

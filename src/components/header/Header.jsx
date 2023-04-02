@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { BsSend } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
+import logoProfile from "../../assets/img/profile-about.jpg";
 
 const Header = () => {
 
@@ -38,20 +39,23 @@ const Header = () => {
 			<div className="container">
 				<div className="flex items-center justify-between">
 					{/* Logo */}
-					<div className="flex items-center gap-[10px]">
-						<span className="w-[35px] h-[35px] bg-primaryColor text-white text-[18px] font-semibold rounded-full flex items-center justify-center">D</span>
-
+					<div className="flex items-center gap-[8px]">
+						<div className="flex items-center justify-center">
+							<img src={logoProfile} alt="" className="h-8 w-8 rounded-full" />
+						</div>
 						<div className="leading-[20px]">
-							<h3 className="text-xl font-bold text-smallTextColor">Davit</h3>
+							<h3 className="text-[22px] font-bold text-smallTextColor">Davit</h3>
 						</div>
 					</div>
 
-					{/* Logo End */}
 					{/* menu Start */}
 					<div className="menu">
 						<ul className='flex items-center gap-10'>
 							<li>
 								<a onClick={handleClick} className="text-smallTextColor font-semibold" href="#about">About</a>
+							</li>
+							<li>
+								<a onClick={handleClick} className="text-smallTextColor font-semibold" href="#skill">Skill</a>
 							</li>
 							<li>
 								<a onClick={handleClick} className="text-smallTextColor font-semibold" href="#service">Service</a>
