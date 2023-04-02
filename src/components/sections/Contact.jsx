@@ -1,12 +1,32 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { MdEmail } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
 import { MdLocationPin } from "react-icons/md";
 
 const Contact = () => {
+
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault();
+		emailjs.sendForm('service_yh2ekof', 'template_hd3nf9s', form.current, 'XvXZ8nGiRMgV0Pexv')
+			.then((result) => {
+				toast.success("Email send successfully")
+				form.current.reset()
+			}, (error) => {
+				toast.error(error.text)
+			});
+	};
+
 	return (
-		<section className="pb-16" id="contact">
+		<section className="pb-16 pt-0" id="contact">
 			<div className="container">
+
+				<ToastContainer autoClose={3000} />
+
 				<h3 className="text-center font-bold text-[30px] text-2xl text-headingColor mb-12">Contact</h3>
 				<div className="flex  gap-4">
 					<div className="w-full basis-1/3  bg-white shadow-md px-4 py-7">
@@ -38,14 +58,12 @@ const Contact = () => {
 					</div>
 
 					<div className="w-full py-5 px-4 bg-white shadow-md">
-						<form action="" method="post">
-							<input type="text" placeholder='Name' className="border border-gray-300 w-full rounded-[4px]  py-1 pl-[10px] focus:border-sky-500 focus:outline-primaryColor mb-4" required />
+						<form method="post" ref={form} onSubmit={sendEmail}>
+							<input type="text" name="from_name" placeholder='Name' className="border border-gray-300 w-full rounded-[4px]  py-1 pl-[10px] focus:border-sky-500 focus:outline-primaryColor mb-4" required />
+							<input type="email" name='to_name' placeholder='Email' className="border border-gray-300 w-full rounded-[4px]  py-1 pl-[10px] focus:border-sky-500 focus:outline-primaryColor mb-4" required />
+							<textarea cols="10" rows="10" name='message' placeholder='Message' className="border border-gray-300 w-full rounded-[4px]  py-1 pl-[10px] focus:border-sky-500 focus:outline-primaryColor" required></textarea>
 
-							<input type="email" placeholder='Email' className="border border-gray-300 w-full rounded-[4px]  py-1 pl-[10px] focus:border-sky-500 focus:outline-primaryColor mb-4" required />
-
-							<textarea cols="10" rows="10" placeholder='Message' className="border border-gray-300 w-full rounded-[4px]  py-1 pl-[10px] focus:border-sky-500 focus:outline-primaryColor" required></textarea>
-
-							<button type="submit" className=" bg-primaryColor py-2 px-3 rounded-md text-white mt-4 ">Send Message</button>
+							<button type="submit" value="Send" className=" bg-primaryColor py-2 px-3 rounded-md text-white mt-4">Send Message</button>
 						</form>
 					</div>
 				</div>
