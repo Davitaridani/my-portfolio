@@ -53,7 +53,7 @@ const Contact = () => {
 						</div>
 
 						<div className="">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d318429.3473594949!2d113.42535445500475!3d-8.200323654166452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMTcnMzIuNCJTIDExM8KwMzEnMzguNiJF!5e0!3m2!1sid!2sid!4v1680351907243!5m2!1sid!2sid" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-[340px] h-[250px] border-0'></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d318429.3473594949!2d113.42535445500475!3d-8.200323654166452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMTcnMzIuNCJTIDExM8KwMzEnMzguNiJF!5e0!3m2!1sid!2sid!4v1680351907243!5m2!1sid!2sid" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='w-[340px] h-[250px] border-0' title="Map"></iframe>
 						</div>
 					</div>
 
