@@ -41,6 +41,7 @@ export const imgPortfolio = [
     technologies: ["React", "Scss", "Bootstrap", "Aos", "Swiper"],
     demo: "https://golden-store.vercel.app/",
     sourceCode: "https://github.com/Davitaridani/golden-store",
+    delayAos: 100,
   },
   {
     id: 2,
@@ -50,6 +51,7 @@ export const imgPortfolio = [
     technologies: ["React", "Tailwind", "Aos"],
     demo: "https://my-hoo-bank.vercel.app/",
     sourceCode: "https://github.com/Davitaridani/hoo-bank",
+    delayAos: 250,
   },
 ];
 
@@ -108,23 +110,35 @@ export const iconHero = [
 export const imgSkill = [
   {
     frontEnd: [
-      { id: 1, img: html, title: "Html", text: "Advance" },
-      { id: 2, img: css, title: "Css", text: "Advance" },
-      { id: 3, img: js, title: "JS/ES6", text: "Intermediate" },
-      { id: 4, img: scss, title: "Scss", text: "Intermediate" },
-      { id: 5, img: bs, title: "Bootstrap", text: "Advance" },
-      { id: 6, img: tailwind, title: "Tailwind", text: "Basic" },
-      { id: 7, img: react, title: "React Js", text: "Intermediate" },
-      { id: 8, img: github, title: "GitHub", text: "Intermediate" },
-      { id: 9, img: figma, title: "Figma", text: "Basic" },
-      { id: 10, img: ps, title: "PS", text: "Basic" },
-      { id: 11, img: npm, title: "NPM", text: "Intermediate" },
+      { id: 1, img: html, title: "Html", text: "Advance", delayAos: 50 },
+      { id: 2, img: css, title: "Css", text: "Advance", delayAos: 150 },
+      { id: 3, img: js, title: "JS/ES6", text: "Intermediate", delayAos: 250 },
+      { id: 4, img: scss, title: "Scss", text: "Intermediate", delayAos: 350 },
+      { id: 5, img: bs, title: "Bootstrap", text: "Advance", delayAos: 50 },
+      { id: 6, img: tailwind, title: "Tailwind", text: "Basic", delayAos: 150 },
+      {
+        id: 7,
+        img: react,
+        title: "React Js",
+        text: "Intermediate",
+        delayAos: 250,
+      },
+      {
+        id: 8,
+        img: github,
+        title: "GitHub",
+        text: "Intermediate",
+        delayAos: 350,
+      },
+      { id: 9, img: figma, title: "Figma", text: "Basic", delayAos: 50 },
+      { id: 10, img: ps, title: "PS", text: "Basic", delayAos: 150 },
+      { id: 11, img: npm, title: "NPM", text: "Intermediate", delayAos: 250 },
     ],
   },
   {
     backEnd: [
-      { img: nodeJs, title: "Node JS", text: "Basic" },
-      { img: express, title: "Express JS", text: "Basic" },
+      { img: nodeJs, title: "Node JS", text: "Basic", delayAos: 100 },
+      { img: express, title: "Express JS", text: "Basic", delayAos: 200 },
     ],
   },
 ];

@@ -27,7 +27,7 @@ const Hero = () => {
 						<div className="flex items-center gap-6 mt-7">
 							<a href="mailto:davitaridani@gmail.com" data-aos="fade-up" data-aos-duration="2000"><span className='flex items-center bg-primaryColor text-white font-medium gap-1 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'><HiOutlineMail /> Hire Me</span>
 							</a>
-							<a href={Imgownload} download className="flex items-center text-smallTextColor font-semibold text-base py-2 px-4 rounded-[8px] border border-solid border-smallTextColor gap-1 hover:border-primaryColor hover:bg-primaryColor hover:text-white ease-in duration-300" data-aos="fade-up" data-aos-duration="2000"> <BsCloudArrowDownFill /> Download CV</a>
+							<a href={Imgownload} download className="flex items-center text-smallTextColor font-semibold text-base py-2 px-4 rounded-[8px] border border-solid border-smallTextColor gap-1 hover:border-primaryColor hover:bg-primaryColor hover:text-white ease-in duration-300" data-aos="fade-up" data-aos-duration="2000">  <BsCloudArrowDownFill /> Download CV</a>
 						</div>
 						<p className='flex gap-1 text-headingColor font-medium mt-12 text-[15px] leading-7 sm:pl-14 sm:pr-10' data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
 							<span className='pt-2'> <TbApps /> </span>
@@ -44,7 +44,7 @@ const Hero = () => {
 					</div>
 
 					<div className="basis-1/3 mt-10 sm:mt-0">
-						<div className="img-profile flex items-center justify-center overflow-hidden">
+						<div className="img-profile flex items-center justify-center overflow-hidden" data-aos="zoom-in-down" data-aos-duration="2500" data-aos-delay="300">
 							<img src={imgHero} alt="" className="rounded-tl-[125px] rounded-tr-[125px] rounded-bl-[25px] rounded-br-[25px] mt-8 animate-shake" />
 						</div>
 					</div>

@@ -3,6 +3,9 @@ import { imgPortfolio } from "../../assets/data/dataPortfolio";
 // import Modal from "../UI/Modal";
 import { TbWorldWww } from "react-icons/tb";
 import { AiFillGithub } from "react-icons/ai";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Portfolio = () => {
 
@@ -21,6 +24,10 @@ const Portfolio = () => {
 	// 	setShowModal(true)
 	// 	setActiveID(id)
 	// }
+
+	useEffect(() => {
+		AOS.init();
+	}, []);
 
 	useEffect(() => {
 		if (selectTab === "all") {
@@ -50,7 +57,7 @@ const Portfolio = () => {
 
 				<div className="flex items-center gap-4 flex-wrap mt-12 overflow-hidden">
 					{portfolio?.slice(0, nextItems)?.map((portfolio, index) => (
-						<div className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.3%] relative z-[1]  " key={index}>
+						<div key={index} className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.3%] relative z-[1]" data-aos="fade-up" data-aos-duration="1500" data-aos-delay={portfolio.delayAos} data-aos-offset="200">
 							<div className="img-portfolio overflow-hidden">
 								<img src={portfolio.img} alt="portfolio" className="rounded-[8px] group-hover:scale-110 ease-in-out duration-500 cursor-pointer" />
 							</div>
@@ -65,38 +72,6 @@ const Portfolio = () => {
 										>{item}</span>
 									))}
 								</div>
-
-								{/* <div className="flex items-center gap-3 mt-5 mb-6">
-									<a
-										target="_blank"
-										rel="noreferrer"
-										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-headingColor ease-in duration-200" href="#"><span><TbWorldWww /></span> Demo</a>
-
-									<a
-										target="_blank"
-										rel="noreferrer"
-										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-headingColor ease-in duration-200" href="#"><span><AiFillGithub /></span> Source Code</a>
-								</div> */}
-
-								{/* <div className="flex items-center gap-3 mt-5 mb-6">
-									{portfolio.siteUrl.map(item => (
-
-										<a
-											target="_blank"
-											rel="noreferrer"
-											className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-headingColor ease-in duration-200" href={item.demo}><TbWorldWww /> Demo</a>
-									))}
-
-									{portfolio.siteUrl.map(data => {
-										<a
-											href={data.sourceCode}
-											target="_blank"
-											rel="noreferrer"
-											className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-[15px] hover:bg-headingColor ease-in duration-200"
-										><span><AiFillGithub /></span>Source Code</a>
-									})}
-
-								</div> */}
 
 								<div className="flex items-center gap-3 mt-5 mb-6">
 									<a
