@@ -25,11 +25,11 @@ const ScrollToTop = () => {
     <div className="btn-scroll-to-top relative">
       <div className="container relative">
         <button
-          className="flex items-center justify-center fixed bg-primaryColor rounded-full bottom-10 right-[9%] h-9 w-9 shadow-md animate-shake-2"
+          className="flex items-center justify-center fixed bg-primaryColor rounded-full bottom-7 right-5 md:bottom-10 md:right-[9%] h-8 w-8 md:h-9 md:w-9 shadow-md animate-shake-2"
           onClick={btnToTop}
           style={{ display: showTopBtn ? "block" : "none" }}
         >
-          <span className="text-white flex items-center justify-center text-[24px]">
+          <span className="text-white flex items-center justify-center md:text-[24px]  text-[22px]">
             <MdKeyboardDoubleArrowUp />
           </span>
         </button>

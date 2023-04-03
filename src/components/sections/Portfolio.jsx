@@ -32,16 +32,16 @@ const Portfolio = () => {
 	}, [selectTab])
 
 	return (
-		<section id="portfolio">
+		<section className="py-0 md:pt-12" id="portfolio">
 			<div className="container">
-				<div className="flex items-center justify-between flex-wrap">
-					<div className="mb-7 sm:mb-0">
-						<h3 className='text-headingColor text-[30px] font-bold'>My Project</h3>
+				<div className="md:flex flex items-center justify-between md:flex-wrap">
+					<div className="md:mb-7 sm:mb-0 ">
+						<h3 className='text-headingColor text-[28px] text-3xl font-bold'>My Project</h3>
 					</div>
 					<div className="flex gap-3">
-						<button onClick={() => setSelectTab("all")} className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]">All</button>
-						<button onClick={() => setSelectTab("Front End")} className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]">Front End</button>
-						<button onClick={() => setSelectTab("UI/UX")} className="text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]">UI/UX</button>
+						<button onClick={() => setSelectTab("all")} className="text-smallTextColor border border-solid border-smallTextColor text-sm md:text-base py-[5px] px-[8px] md:py-2 md:px-4 rounded-[8px]">All</button>
+						<button onClick={() => setSelectTab("Front End")} className="text-smallTextColor border border-solid border-smallTextColor text-sm md:text-base py-[5px] px-[8px] md:py-2 md:px-4 rounded-[8px]">Front End</button>
+						<button onClick={() => setSelectTab("UI/UX")} className="text-smallTextColor border border-solid border-smallTextColor text-sm md:text-base py-[5px] px-[8px] md:py-2 md:px-4 rounded-[8px]">UI/UX</button>
 					</div>
 				</div>
 
@@ -49,11 +49,11 @@ const Portfolio = () => {
 					{portfolio?.slice(0, nextItems)?.map((portfolio, index) => (
 						<div key={index} className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.3%] relative z-[1]" data-aos="fade-up" data-aos-duration="1500" data-aos-delay={portfolio.delayAos} data-aos-offset="200">
 							<div className="img-portfolio overflow-hidden">
-								<img src={portfolio.img} alt="portfolio" className="rounded-[8px] group-hover:scale-110 ease-in-out duration-500 cursor-pointer" />
+								<img src={portfolio.img} alt="portfolio" className="rounded-[8px] group-hover:scale-110 ease-in-out duration-500 cursor-pointer mb-2 md:mb-1" />
 							</div>
 							<div className="p-3">
-								<h3 className="text-[20px] font-semibold mb-4 text-headingColor">{portfolio.title}</h3>
-								<div className="gap-2 flex items-center flex-wrap">
+								<h3 className="text-[17px] md:text-[20px] font-semibold md:mb-4 mb-2 text-headingColor">{portfolio.title}</h3>
+								<div className="gap-2 flex items-center flex-wrap ">
 									<h3 className="text-[15px] font-medium text-headingColor">Technology:</h3>
 									{portfolio.technologies.map((item, index) => (
 										<span
@@ -63,18 +63,18 @@ const Portfolio = () => {
 									))}
 								</div>
 
-								<div className="flex items-center gap-3 mt-5 mb-6">
+								<div className="flex items-center gap-3 my-6 md:mt-5 md:mb-6">
 									<a
 										target="_blank"
 										rel="noreferrer"
-										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-smallTextColor ease-in duration-200" href={portfolio.demo}><TbWorldWww /> Demo
+										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-[6px] px-[9px] md:py-2 md:px-3 font-medium text-white text-[13px] md:text-sm hover:bg-smallTextColor ease-in duration-200" href={portfolio.demo}><TbWorldWww /> Demo
 									</a>
 
 									<a
 										href={portfolio.sourceCode}
 										target="_blank"
 										rel="noreferrer"
-										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-smallTextColor ease-in duration-200"
+										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-[6px] px-[9px] md:py-2 md:px-3 font-medium text-white text-[13px] md:text-sm hover:bg-smallTextColor ease-in duration-200"
 									><span><AiFillGithub /></span>Source Code
 									</a>
 								</div>
