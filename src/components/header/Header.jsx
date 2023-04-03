@@ -1,12 +1,7 @@
-import React, { useRef, useEffect, useState } from 'react'
-import { BsSend } from "react-icons/bs";
-import { GiHamburgerMenu } from "react-icons/gi";
+import React, { useEffect, useRef, useState } from 'react';
 import logoProfile from "../../assets/img/profile-about.jpg";
-import imgMenu from "../../assets/img/menu.svg";
-import imgClose from "../../assets/img/close.svg";
-
-import { MdClose } from "react-icons/md";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { MdClose } from "react-icons/md";
 
 const Header = () => {
 

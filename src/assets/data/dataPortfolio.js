@@ -81,22 +81,27 @@ export const iconHero = [
   {
     icon: <FaInstagram />,
     link: "https://www.instagram.com/davitt_ad/",
+    delayAos: 50,
   },
   {
     icon: <IoLogoGithub />,
     link: "https://github.com/Davitaridani",
+    delayAos: 150,
   },
   {
     icon: <FaGitlab />,
     link: "https://gitlab.com/Davitaridani",
+    delayAos: 300,
   },
   {
     icon: <GrFacebookOption />,
     link: "https://www.facebook.com/davit.aridani",
+    delayAos: 450,
   },
   {
     icon: <FaLinkedinIn />,
     link: "https://www.linkedin.com/in/ahmat-davit-ari-dani-1125721a1/",
+    delayAos: 550,
   },
 ];
 
