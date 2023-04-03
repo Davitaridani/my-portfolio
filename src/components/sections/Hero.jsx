@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { TbApps } from "react-icons/tb";
 import imgHero from "../../assets/img/profile.jpg";
 import { iconHero } from "../../assets/data/dataPortfolio";
-import Imgownload from "../../assets/img/Kosa.pdf";
+import Imgownload from "../../assets/img/Davit.pdf";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
