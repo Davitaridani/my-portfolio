@@ -23,7 +23,7 @@ const Contact = () => {
 
 	return (
 		<section className="pb-16 pt-0" id="contact">
-			<div className="container ">
+			<div className="container overflow-hidden">
 				<ToastContainer autoClose={3000} />
 				<h3 className="text-center font-bold text-[28px] text-2xl text-headingColor mb-8 md:mb-12">Contact</h3>
 				<div className="block md:flex gap-4">
