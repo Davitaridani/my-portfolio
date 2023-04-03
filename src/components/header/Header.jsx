@@ -7,22 +7,22 @@ const Header = () => {
 
 	const [toggle, setToggle] = useState(false)
 
-	const headerRef = useRef(null)
+	// const headerRef = useRef(null)
 
-	const headerSticky = () => {
-		window.addEventListener("scroll", () => {
-			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-				headerRef.current.classList.add("header-sticky")
-			} else {
-				headerRef.current.classList.remove("header-sticky")
-			}
-		})
-	}
+	// const headerSticky = () => {
+	// 	window.addEventListener("scroll", () => {
+	// 		if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	// 			headerRef.current.classList.add("header-sticky")
+	// 		} else {
+	// 			headerRef.current.classList.remove("header-sticky")
+	// 		}
+	// 	})
+	// }
 
-	useEffect(() => {
-		headerSticky()
-		return window.removeEventListener("scroll", headerSticky)
-	}, [])
+	// useEffect(() => {
+	// 	headerSticky()
+	// 	return window.removeEventListener("scroll", headerSticky)
+	// }, [])
 
 	const handleClick = e => {
 		e.preventDefault();
@@ -45,7 +45,8 @@ const Header = () => {
 	]
 
 	return (
-		<header ref={headerRef} className="w-full h-[80px] leading-[80px] flex items-center ">
+		// ref = { headerRef }
+		<header className="w-full h-[70px] sticky backdrop-blur-sm backdrop-brightness-100 bg-white/40 top-0 z-[999] shadow-md leading-[70px] flex items-center">
 			<div className="container">
 				<div className="flex items-center justify-between">
 					<div className="flex items-center gap-[8px]">
@@ -67,9 +68,9 @@ const Header = () => {
 						))}
 					</ul>
 
-					<div className="sm:hidden flex flex-1 justify-end items-center">
+					<div className="sm:hidden  flex flex-1 justify-end items-center">
 						<button className='text-[32px] object-contain text-headingColor duration-400 ease-in' onClick={() => setToggle((prev) => !prev)}>{toggle ? <MdClose /> : <HiMenuAlt3 />}</button>
-						<div className={`${toggle ? "flex" : "hidden"} p-6 bg-gradient text-white absolute top-16 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar duration-500 ease-in`}>
+						<div className={`${toggle ? "flex" : "hidden"} p-5 bg-gradient  text-white absolute top-16 right-0 mx-4 my-[18px] min-w-[140px] bg-fixed rounded-xl sidebar duration-500 ease-in`}>
 							<ul className='list-none flex flex-col justify-end items-center flex-1'>
 								{navLinks.map((item, index) => (
 									<li key={item.id} className={`font-semibold text-white leading-10 cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : "mb-0"}`}>

@@ -19,7 +19,7 @@ const Hero = () => {
 			<div className="container pt-14">
 				<div className="md:flex items-center justify-between sm:flex-col md:flex-row">
 					<div className="w-full md:basis-1/2">
-						<h5 className="font-bold text-headingColor text-[40px] leading-[35px] sm:leading-[45px] mt-5"
+						<h5 className="font-bold text-headingColor  text-[40px] leading-[35px] sm:leading-[45px] mt-5"
 							data-aos="fade-right"
 							data-aos-duration="2000"
 						>I'm Ahmat Davit <br />a <span className='text-primaryColor' data-aos="fade-right"

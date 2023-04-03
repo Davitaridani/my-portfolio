@@ -3,6 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
 import { RiFacebookFill, RiLinkedinBoxLine } from "react-icons/ri";
 import { SiWhatsapp } from "react-icons/si";
+import ScrollToTop from '../UI/ScrollToTop';
 
 
 const Footer = () => {
@@ -83,6 +84,9 @@ const Footer = () => {
 					</div>
 				</div>
 				<p className="text-gray-400 text-sm tracking-wide text-center">&copy; Copyright Ahmat Davit. All rights reserved. </p>
+
+
+				<ScrollToTop />
 			</div>
 		</footer >
 	)

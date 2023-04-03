@@ -1,29 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { imgPortfolio } from "../../assets/data/dataPortfolio";
-// import Modal from "../UI/Modal";
 import { TbWorldWww } from "react-icons/tb";
 import { AiFillGithub } from "react-icons/ai";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 
 const Portfolio = () => {
 
 	const [nextItems, setNextItems] = useState(6)
 	const [portfolio, setPortfolio] = useState(imgPortfolio)
 	const [selectTab, setSelectTab] = useState("all")
-	// const [showModal, setShowModal] = useState(false)
-	// const [activeID, setActiveID] = useState(null)
-
 
 	const handleLoadMore = () => {
 		setNextItems(prev => prev + 3)
 	}
-
-	// const handleShowModal = id => {
-	// 	setShowModal(true)
-	// 	setActiveID(id)
-	// }
 
 	useEffect(() => {
 		AOS.init();
@@ -62,9 +52,9 @@ const Portfolio = () => {
 								<img src={portfolio.img} alt="portfolio" className="rounded-[8px] group-hover:scale-110 ease-in-out duration-500 cursor-pointer" />
 							</div>
 							<div className="p-3">
-								<h3 className="text-[20px] font-semibold mb-4">{portfolio.title}</h3>
+								<h3 className="text-[20px] font-semibold mb-4 text-headingColor">{portfolio.title}</h3>
 								<div className="gap-2 flex items-center flex-wrap">
-									<h3 className="text-[15px] font-medium">Technology:</h3>
+									<h3 className="text-[15px] font-medium text-headingColor">Technology:</h3>
 									{portfolio.technologies.map((item, index) => (
 										<span
 											key={index}
@@ -77,14 +67,14 @@ const Portfolio = () => {
 									<a
 										target="_blank"
 										rel="noreferrer"
-										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-headingColor ease-in duration-200" href={portfolio.demo}><TbWorldWww /> Demo
+										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-smallTextColor ease-in duration-200" href={portfolio.demo}><TbWorldWww /> Demo
 									</a>
 
 									<a
 										href={portfolio.sourceCode}
 										target="_blank"
 										rel="noreferrer"
-										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-headingColor ease-in duration-200"
+										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-2 px-3 font-medium text-white text-sm hover:bg-smallTextColor ease-in duration-200"
 									><span><AiFillGithub /></span>Source Code
 									</a>
 								</div>
