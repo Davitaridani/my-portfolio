@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { TbApps } from "react-icons/tb";
 import imgHero from "../../assets/img/profile.jpg";
 import { iconHero } from "../../assets/data/dataPortfolio";
-import Imgownload from "../../assets/img/Davit.pdf";
+import myCV from "../../assets/img/Ahmat Davit Ari Dani_CV.pdf";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -27,7 +27,7 @@ const Hero = () => {
 						<div className="flex items-center gap-4 md:gap-6 mt-7">
 							<a href="mailto:davitaridani@gmail.com" data-aos="fade-up" data-aos-duration="2000"><span className='flex items-center bg-primaryColor text-white font-medium gap-1 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px] text-[15px] md:text-base'><HiOutlineMail /> Hire Me</span>
 							</a>
-							<a href={Imgownload} download className="flex items-center text-smallTextColor font-semibold py-2 px-4 rounded-[8px] border border-solid border-smallTextColor gap-1 hover:border-primaryColor hover:bg-primaryColor hover:text-white ease-in duration-300 text-[15px] md:text-base" data-aos="fade-up" data-aos-duration="2000"> <BsCloudArrowDownFill /> Download CV</a>
+							<a href={myCV} download className="flex items-center text-smallTextColor font-semibold py-2 px-4 rounded-[8px] border border-solid border-smallTextColor gap-1 hover:border-primaryColor hover:bg-primaryColor hover:text-white ease-in duration-300 text-[15px] md:text-base" data-aos="fade-up" data-aos-duration="2000"> <BsCloudArrowDownFill /> Download CV</a>
 						</div>
 						<p className='flex gap-1 text-headingColor font-medium mt-9 md:mt-12 text-[15px] leading-7 sm:pl-14 sm:pr-10' data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
 							<span className='pt-2'> <TbApps /> </span>
