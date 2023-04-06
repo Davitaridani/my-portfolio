@@ -38,7 +38,7 @@ const Portfolio = () => {
 					<div className="md:mb-7 sm:mb-0 ">
 						<h3 className='text-headingColor text-[28px] text-3xl font-bold'>My Project</h3>
 					</div>
-					<div className="flex gap-3">
+					<div className="flex gap-[5px] md:gap-3">
 						<button onClick={() => setSelectTab("all")} className="text-smallTextColor border border-solid border-smallTextColor text-sm md:text-base py-[5px] px-[8px] md:py-2 md:px-4 rounded-[8px]">All</button>
 						<button onClick={() => setSelectTab("Front End")} className="text-smallTextColor border border-solid border-smallTextColor text-sm md:text-base py-[5px] px-[8px] md:py-2 md:px-4 rounded-[8px]">Front End</button>
 						<button onClick={() => setSelectTab("UI/UX")} className="text-smallTextColor border border-solid border-smallTextColor text-sm md:text-base py-[3px] px-[5px] md:py-2 md:px-4 rounded-[8px]">Back End</button>
