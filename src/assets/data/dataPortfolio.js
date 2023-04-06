@@ -9,6 +9,7 @@ import portfolioImg07 from "../img/portfolio-07.jpg";
 // Img Portfolio
 import imgGoldenStore from "../img/portfolio/golden-store.jpg";
 import imgHooBank from "../img/portfolio/hoo-bank.jpg";
+import imgMeetupDesigner from "../img/portfolio/meetup-designer.jpg";
 
 // Iocn Herro
 import { FaInstagram } from "react-icons/fa";
@@ -44,27 +45,31 @@ export const imgPortfolio = [
     delayAos: 100,
   },
   {
+    id: 3,
+    img: imgMeetupDesigner,
+    title: "Meetup Designer",
+    category: "Front End",
+    technologies: ["React", "Scss", "Bootstrap", "Aos"],
+    demo: "https://meetup-designer.vercel.app/",
+    sourceCode: "https://github.com/Davitaridani/meet-up",
+    delayAos: 250,
+  },
+  {
     id: 2,
     img: imgHooBank,
-    title: "Landing Page - Hook Bank",
+    title: "Hook Bank",
     category: "Front End",
     technologies: ["React", "Tailwind", "Aos"],
     demo: "https://my-hoo-bank.vercel.app/",
     sourceCode: "https://github.com/Davitaridani/hoo-bank",
-    delayAos: 250,
+    delayAos: 350,
   },
 ];
 
 export const qualification = [
   {
-    year: "2016 - 2019",
-    school: "High school of SMAN 01 Balung, Jember",
-    text: "Student",
-  },
-
-  {
-    year: "2019 - 2022",
-    school: "Politeknik Negeri Jember",
+    year: "Feb 2023 - Agust 2023 / NOW",
+    school: "Fullstack - Bootcamp Binar Academy",
     text: "Student",
   },
   {
@@ -73,8 +78,13 @@ export const qualification = [
     text: "Magang",
   },
   {
-    year: "Feb 2023 - Agust 2023 / NOW",
-    school: "Fullstack - Bootcamp Binar Academy",
+    year: "2019 - 2022",
+    school: "Politeknik Negeri Jember",
+    text: "Student",
+  },
+  {
+    year: "2016 - 2019",
+    school: "High school of SMAN 01 Balung, Jember",
     text: "Student",
   },
 ];

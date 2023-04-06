@@ -41,7 +41,7 @@ const Portfolio = () => {
 					<div className="flex gap-3">
 						<button onClick={() => setSelectTab("all")} className="text-smallTextColor border border-solid border-smallTextColor text-sm md:text-base py-[5px] px-[8px] md:py-2 md:px-4 rounded-[8px]">All</button>
 						<button onClick={() => setSelectTab("Front End")} className="text-smallTextColor border border-solid border-smallTextColor text-sm md:text-base py-[5px] px-[8px] md:py-2 md:px-4 rounded-[8px]">Front End</button>
-						<button onClick={() => setSelectTab("UI/UX")} className="text-smallTextColor border border-solid border-smallTextColor text-sm md:text-base py-[5px] px-[8px] md:py-2 md:px-4 rounded-[8px]">UI/UX</button>
+						<button onClick={() => setSelectTab("UI/UX")} className="text-smallTextColor border border-solid border-smallTextColor text-sm md:text-base py-[3px] px-[5px] md:py-2 md:px-4 rounded-[8px]">Back End</button>
 					</div>
 				</div>
 
@@ -49,7 +49,7 @@ const Portfolio = () => {
 					{portfolio?.slice(0, nextItems)?.map((portfolio, index) => (
 						<div key={index} className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.3%] relative z-[1]" data-aos="fade-up" data-aos-duration="1500" data-aos-delay={portfolio.delayAos} data-aos-offset="200">
 							<div className="img-portfolio overflow-hidden">
-								<img src={portfolio.img} alt="portfolio" className="rounded-[8px] group-hover:scale-110 ease-in-out duration-500 cursor-pointer mb-2 md:mb-1" />
+								<img src={portfolio.img} alt="portfolio" className="rounded-[8px] group-hover:scale-110 ease-in-out duration-500 cursor-pointer mb-2 md:mb-1 h-auto w-full md:h-56" />
 							</div>
 							<div className="p-3">
 								<h3 className="text-[17px] md:text-[20px] font-semibold md:mb-4 mb-2 text-headingColor">{portfolio.title}</h3>

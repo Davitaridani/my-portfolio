@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import logoProfile from "../../assets/img/profile-about.jpg";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
@@ -6,23 +6,6 @@ import { MdClose } from "react-icons/md";
 const Header = () => {
 
 	const [toggle, setToggle] = useState(false)
-
-	// const headerRef = useRef(null)
-
-	// const headerSticky = () => {
-	// 	window.addEventListener("scroll", () => {
-	// 		if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-	// 			headerRef.current.classList.add("header-sticky")
-	// 		} else {
-	// 			headerRef.current.classList.remove("header-sticky")
-	// 		}
-	// 	})
-	// }
-
-	// useEffect(() => {
-	// 	headerSticky()
-	// 	return window.removeEventListener("scroll", headerSticky)
-	// }, [])
 
 	const handleClick = e => {
 		e.preventDefault();
