@@ -21,8 +21,8 @@ const Hero = () => {
 				<div className="md:flex  items-center justify-between sm:flex-col md:flex-row ">
 					<div className="w-full md:basis-1/2">
 
-						<div className="md:h-auto ">
-							<h5 className="font-bold text-headingColor text-[30px] md:text-[40px] leading-[43px] sm:leading-[45px]">
+						<div className="md:h-auto h-32">
+							<h5 className="font-bold text-headingColor text-[35px] md:text-[40px] leading-[43px] sm:leading-[45px]">
 								I'm Ahmat Davit
 							</h5>
 
@@ -38,12 +38,6 @@ const Hero = () => {
 								/>
 							</h1>
 						</div>
-
-						{/* <h5 className="font-bold text-headingColor text-[35px] md:text-[40px] leading-[43px] sm:leading-[45px] mt-5"
-						data-aos="fade-right"
-						data-aos-duration="2000"
-						>I'm Ahmat Davit <br />a <span className='text-primaryColor' data-aos="fade-right"
-							data-aos-duration="2000" data-aos-delay="300">Front End Developer</span></h5> */}
 						<div className="flex items-center gap-4 md:gap-6 mt-7">
 							<a href="mailto:davitaridani@gmail.com" data-aos="fade-up" data-aos-duration="2000"><span className='flex items-center bg-primaryColor text-white font-medium gap-1 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px] text-[15px] md:text-base'><HiOutlineMail /> Hire Me</span>
 							</a>
