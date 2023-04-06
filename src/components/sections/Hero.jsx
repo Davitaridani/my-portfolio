@@ -21,22 +21,23 @@ const Hero = () => {
 				<div className="md:flex  items-center justify-between sm:flex-col md:flex-row ">
 					<div className="w-full md:basis-1/2">
 
+						<div className="md:h-auto ">
+							<h5 className="font-bold text-headingColor text-[30px] md:text-[40px] leading-[43px] sm:leading-[45px]">
+								I'm Ahmat Davit
+							</h5>
 
-						<h5 className="font-bold text-headingColor text-[35px] md:text-[40px] leading-[43px] sm:leading-[45px]">
-							I'm Ahmat Davit
-						</h5>
-
-						<h1 className="font-bold text-primaryColor text-[35px] md:text-[40px] leading-[43px] sm:leading-[45px] flex">
-							<span className="text-headingColor">a &nbsp;</span>
-							<Typewriter
-								options={{
-									strings: ['Front End Developer', 'Fotografer'],
-									autoStart: true,
-									loop: true,
-									delay: 150
-								}}
-							/>
-						</h1>
+							<h1 className="font-bold text-primaryColor text-[30px] md:text-[40px] leading-[43px] sm:leading-[45px] flex">
+								<span className="text-headingColor">a &nbsp;</span>
+								<Typewriter
+									options={{
+										strings: ['Front End Developer', 'Fotografer'],
+										autoStart: true,
+										loop: true,
+										delay: 150
+									}}
+								/>
+							</h1>
+						</div>
 
 						{/* <h5 className="font-bold text-headingColor text-[35px] md:text-[40px] leading-[43px] sm:leading-[45px] mt-5"
 						data-aos="fade-right"
