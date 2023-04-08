@@ -130,7 +130,7 @@ export const imgSkill = [
         id: 7,
         img: react,
         title: "React Js",
-        text: "Intermediate",
+        text: "Basic",
         delayAos: 250,
       },
       {
