@@ -73,7 +73,7 @@ export const qualification = [
     text: "Student",
   },
   {
-    year: "Nov 2021 - April 2022",
+    year: "Sep 2021 - April 2022",
     school: "Mark Design, Surabaya",
     text: "Magang",
   },
