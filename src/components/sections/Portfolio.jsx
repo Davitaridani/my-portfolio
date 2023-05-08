@@ -89,9 +89,6 @@ const Portfolio = () => {
 					}
 				</div>
 			</div >
-			{/* {
-				showModal && <Modal setShowModal={setShowModal} actvieID={activeID} />
-			} */}
 		</section >
 	)
 }

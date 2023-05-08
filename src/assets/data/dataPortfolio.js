@@ -1,17 +1,14 @@
-// Img Portfolio
 import imgGoldenStore from "../img/portfolio/golden-store.jpg";
 import imgHooBank from "../img/portfolio/hoo-bank.jpg";
 import imgMeetupDesigner from "../img/portfolio/meetup-designer.jpg";
-import imgMyFirniture from "../img/portfolio/my-furniture.jpeg";
+import imgMyFirniture from "../img/portfolio/my-furniture.jpg";
 
-// Iocn Herro
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { GrFacebookOption } from "react-icons/gr";
 import { FaGitlab } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
-// Img Skill
 import html from "../img/html.png";
 import css from "../img/css.png";
 import js from "../img/js.png";
@@ -52,7 +49,7 @@ export const imgPortfolio = [
     img: imgMyFirniture,
     title: "My Firniture",
     category: "Front End",
-    technologies: ["React", "Redux", "Scss", "Bootstrap"],
+    technologies: ["React", "Redux", "Scss", "Bootstrap", "Aos"],
     demo: "https://myfiniture.vercel.app/home",
     sourceCode: "https://github.com/Davitaridani/my-furniture/",
     delayAos: 350,
