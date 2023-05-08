@@ -10,6 +10,7 @@ import portfolioImg07 from "../img/portfolio-07.jpg";
 import imgGoldenStore from "../img/portfolio/golden-store.jpg";
 import imgHooBank from "../img/portfolio/hoo-bank.jpg";
 import imgMeetupDesigner from "../img/portfolio/meetup-designer.jpg";
+import imgMyFirniture from "../img/portfolio/my-furniture.jpeg";
 
 // Iocn Herro
 import { FaInstagram } from "react-icons/fa";
@@ -26,7 +27,7 @@ import scss from "../img/scss.png";
 import bs from "../img/bs.png";
 import tailwind from "../img/tailwind.png";
 import react from "../img/react.png";
-import github from "../img/github.png";
+import git from "../img/git.png";
 import figma from "../img/figma.png";
 import npm from "../img/npm.png";
 import ps from "../img/ps.png";
@@ -55,6 +56,16 @@ export const imgPortfolio = [
     delayAos: 250,
   },
   {
+    id: 4,
+    img: imgMyFirniture,
+    title: "My Firniture",
+    category: "Front End",
+    technologies: ["React", "Redux", "Scss", "Bootstrap"],
+    demo: "https://myfiniture.vercel.app/home",
+    sourceCode: "https://github.com/Davitaridani/my-furniture/",
+    delayAos: 350,
+  },
+  {
     id: 2,
     img: imgHooBank,
     title: "Hook Bank",
@@ -62,7 +73,7 @@ export const imgPortfolio = [
     technologies: ["React", "Tailwind", "Aos"],
     demo: "https://my-hoo-bank.vercel.app/",
     sourceCode: "https://github.com/Davitaridani/hoo-bank",
-    delayAos: 350,
+    delayAos: 450,
   },
 ];
 
@@ -135,8 +146,8 @@ export const imgSkill = [
       },
       {
         id: 8,
-        img: github,
-        title: "GitHub",
+        img: git,
+        title: "Git",
         text: "Intermediate",
         delayAos: 350,
       },
