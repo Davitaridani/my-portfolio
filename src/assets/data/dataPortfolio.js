@@ -125,12 +125,18 @@ export const imgSkill = [
       { id: 3, img: js, title: "JS/ES6", text: "Intermediate", delayAos: 250 },
       { id: 4, img: scss, title: "Scss", text: "Intermediate", delayAos: 350 },
       { id: 5, img: bs, title: "Bootstrap", text: "Advance", delayAos: 50 },
-      { id: 6, img: tailwind, title: "Tailwind", text: "Basic", delayAos: 150 },
+      {
+        id: 6,
+        img: tailwind,
+        title: "Tailwind",
+        text: "Intermediate",
+        delayAos: 150,
+      },
       {
         id: 7,
         img: react,
         title: "React Js",
-        text: "Basic",
+        text: "Intermediate",
         delayAos: 250,
       },
       {
