@@ -2,6 +2,7 @@ import imgGoldenStore from "../img/portfolio/golden-store.jpg";
 import imgHooBank from "../img/portfolio/hoo-bank.jpg";
 import imgMeetupDesigner from "../img/portfolio/meetup-designer.jpg";
 import imgMyFirniture from "../img/portfolio/my-furniture.jpg";
+import imgRestApi from "../img/portfolio/crud-restapi.jpg";
 
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
@@ -26,43 +27,53 @@ import nodeJs from "../img/node-js.png";
 export const imgPortfolio = [
   {
     id: 1,
-    img: imgGoldenStore,
-    title: "Web App Golden Store",
+    img: imgRestApi,
+    title: "Rest Api",
     category: "Front End",
-    technologies: ["React", "Scss", "Bootstrap", "Aos", "Swiper"],
-    demo: "https://golden-store.vercel.app/",
-    sourceCode: "https://github.com/Davitaridani/golden-store",
+    technologies: ["React", "Axios", "Json-Server", "Scss", "Bootstrap"],
+    demo: "https://restapi-crud.vercel.app/",
+    sourceCode: "https://github.com/Davitaridani/crud-restapi",
     delayAos: 100,
   },
   {
-    id: 3,
-    img: imgMeetupDesigner,
-    title: "Meetup Designer",
-    category: "Front End",
-    technologies: ["React", "Scss", "Bootstrap", "Aos"],
-    demo: "https://meetup-designer.vercel.app/",
-    sourceCode: "https://github.com/Davitaridani/meet-up",
-    delayAos: 250,
-  },
-  {
-    id: 4,
+    id: 2,
     img: imgMyFirniture,
     title: "My Firniture",
     category: "Front End",
     technologies: ["React", "Redux", "Scss", "Bootstrap", "Aos"],
     demo: "https://myfiniture.vercel.app/home",
     sourceCode: "https://github.com/Davitaridani/my-furniture/",
-    delayAos: 350,
+    delayAos: 200,
   },
   {
-    id: 2,
+    id: 3,
+    img: imgGoldenStore,
+    title: "Web App Golden Store",
+    category: "Front End",
+    technologies: ["React", "Scss", "Bootstrap", "Aos", "Swiper"],
+    demo: "https://golden-store.vercel.app/",
+    sourceCode: "https://github.com/Davitaridani/golden-store",
+    delayAos: 300,
+  },
+  {
+    id: 4,
+    img: imgMeetupDesigner,
+    title: "Meetup Designer",
+    category: "Front End",
+    technologies: ["React", "Scss", "Bootstrap", "Aos"],
+    demo: "https://meetup-designer.vercel.app/",
+    sourceCode: "https://github.com/Davitaridani/meet-up",
+    delayAos: 100,
+  },
+  {
+    id: 5,
     img: imgHooBank,
     title: "Hook Bank",
     category: "Front End",
     technologies: ["React", "Tailwind", "Aos"],
     demo: "https://my-hoo-bank.vercel.app/",
     sourceCode: "https://github.com/Davitaridani/hoo-bank",
-    delayAos: 450,
+    delayAos: 200,
   },
 ];
 
