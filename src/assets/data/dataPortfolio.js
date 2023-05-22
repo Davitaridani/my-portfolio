@@ -28,7 +28,7 @@ export const imgPortfolio = [
   {
     id: 1,
     img: imgRestApi,
-    title: "Rest Api",
+    title: "Rest Api - Server Local",
     category: "Front End",
     technologies: ["React", "Axios", "Json-Server", "Scss", "Bootstrap"],
     demo: "https://restapi-crud.vercel.app/",
