@@ -3,6 +3,7 @@ import imgHooBank from "../img/portfolio/hoo-bank.jpg";
 import imgMeetupDesigner from "../img/portfolio/meetup-designer.jpg";
 import imgMyFirniture from "../img/portfolio/my-furniture.jpg";
 import imgRestApi from "../img/portfolio/crud-restapi.jpg";
+import imgGame from "../img/portfolio/game.jpg";
 
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
@@ -74,6 +75,16 @@ export const imgPortfolio = [
     demo: "https://my-hoo-bank.vercel.app/",
     sourceCode: "https://github.com/Davitaridani/hoo-bank",
     delayAos: 200,
+  },
+  {
+    id: 5,
+    img: imgGame,
+    title: "Game - Landing Page",
+    category: "Front End",
+    technologies: ["Express", "EJS", "Bootstrap", "Scss"],
+    demo: "https://joyous-newt-flip-flops.cyclic.app/",
+    sourceCode: "https://github.com/Davitaridani/landing-page-game",
+    delayAos: 300,
   },
 ];
 
