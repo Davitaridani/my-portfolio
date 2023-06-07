@@ -24,6 +24,7 @@ import npm from "../img/npm.png";
 import ps from "../img/ps.png";
 import express from "../img/expressjs.png";
 import nodeJs from "../img/node-js.png";
+import redux from "../img/redux.png";
 
 export const imgPortfolio = [
   {
@@ -41,7 +42,7 @@ export const imgPortfolio = [
     img: imgMyFirniture,
     title: "My Firniture",
     category: "Front End",
-    technologies: ["React", "Redux", "Scss", "Bootstrap", "Aos"],
+    technologies: ["React", "Redux", "Axios", "Scss", "Bootstrap", "Aos"],
     demo: "https://myfiniture.vercel.app/home",
     sourceCode: "https://github.com/Davitaridani/my-furniture/",
     delayAos: 200,
@@ -163,14 +164,21 @@ export const imgSkill = [
       },
       {
         id: 8,
-        img: git,
-        title: "Git",
+        img: redux,
+        title: "Redux",
         text: "Intermediate",
         delayAos: 350,
       },
-      { id: 9, img: figma, title: "Figma", text: "Basic", delayAos: 50 },
-      { id: 10, img: ps, title: "PS", text: "Basic", delayAos: 150 },
-      { id: 11, img: npm, title: "NPM", text: "Intermediate", delayAos: 250 },
+      {
+        id: 9,
+        img: git,
+        title: "Git",
+        text: "Intermediate",
+        delayAos: 50,
+      },
+      { id: 10, img: figma, title: "Figma", text: "Basic", delayAos: 150 },
+      { id: 12, img: ps, title: "PS", text: "Basic", delayAos: 250 },
+      { id: 12, img: npm, title: "NPM", text: "Intermediate", delayAos: 350 },
     ],
   },
   {

@@ -25,7 +25,7 @@ const Skill = () => {
 										<img src={img} alt="icon" className="mx-auto flex justify-center h-8 mb-3 object-contain  hover:scale-125 duration-300 ease-in  cursor-pointer animate-pulse" />
 									</div>
 									<h3 className="font-semibold leading-5 text-base">{title}</h3>
-									<p className="text-gray-500 tracking-wide text-sm">{text}</p>
+									{/* <p className="text-gray-500 tracking-wide text-sm">{text}</p> */}
 								</div>
 							))}
 						</div>
@@ -40,7 +40,7 @@ const Skill = () => {
 										<img src={item.img} alt="" className="mx-auto h-8 flex justify-center mb-3 object-contain  hover:scale-125 duration-300 ease-in cursor-pointer animate-pulse" />
 									</div>
 									<h3 className="font-semibold leading-5 text-base">{item.title}</h3>
-									<p className="text-gray-500 tracking-wide text-sm">{item.text}</p>
+									{/* <p className="text-gray-500 tracking-wide text-sm">{item.text}</p> */}
 								</div>
 							))}
 						</div>
