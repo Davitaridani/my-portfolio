@@ -5,7 +5,6 @@ import { RiFacebookFill, RiLinkedinBoxLine } from "react-icons/ri";
 import { SiWhatsapp } from "react-icons/si";
 import ScrollToTop from '../UI/ScrollToTop';
 
-
 const Footer = () => {
 
 	const handleClick = e => {
@@ -70,7 +69,7 @@ const Footer = () => {
 						</ul>
 					</div>
 
-					<div className="">
+					<div>
 						<h3 className='mb-3 text-slate-200 text-[15px] md:text-[17px] font-medium'>Follow Me:</h3>
 						<div className="flex items-center justify-center gap-[7px] md:gap-3 mb-3">
 							{dataIcon.map((item, index) => (
@@ -84,7 +83,6 @@ const Footer = () => {
 					</div>
 				</div>
 				<p className="text-gray-400 text-sm tracking-wide text-center">&copy; Copyright Ahmat Davit. All rights reserved. </p>
-
 
 				<ScrollToTop />
 			</div>
