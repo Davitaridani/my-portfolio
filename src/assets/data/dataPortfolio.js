@@ -102,6 +102,11 @@ export const imgPortfolio = [
 
 export const qualification = [
   {
+    year: "Juli 2023 - Agust 2023 / NOW",
+    school: "Gamic Studio - Kamboja ",
+    text: "Employee",
+  },
+  {
     year: "Feb 2023 - Agust 2023 / NOW",
     school: "Fullstack - Bootcamp Binar Academy",
     text: "Student",
