@@ -22,7 +22,7 @@ const ScrollToTop = () => {
   };
 
   return (
-    <div className="btn-scroll-to-top relative">
+    <div className="btn-scroll-to-top relative z-50">
       <div className="container relative">
         <button
           className="flex items-center justify-center fixed bg-primaryColor rounded-full bottom-7 right-5 md:bottom-10 md:right-[9%] h-8 w-8 md:h-9 md:w-9 shadow-md animate-shake-2"

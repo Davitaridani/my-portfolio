@@ -1,9 +1,10 @@
-import imgGoldenStore from "../img/portfolio/golden-store.jpg";
-import imgHooBank from "../img/portfolio/hoo-bank.jpg";
-import imgMeetupDesigner from "../img/portfolio/meetup-designer.jpg";
-import imgMyFirniture from "../img/portfolio/my-furniture.jpg";
-import imgRestApi from "../img/portfolio/crud-restapi.jpg";
+import imgGoldenStore from "../img/portfolio/golden-store.webp";
+import imgHooBank from "../img/portfolio/hoo-bank.webp";
+import imgMeetupDesigner from "../img/portfolio/meetup-designer.webp";
+import imgMyFirniture from "../img/portfolio/my-furniture.webp";
+import imgRestApi from "../img/portfolio/crud-restapi.webp";
 import imgGame from "../img/portfolio/game.jpg";
+import imgGalaxicarpet from "../img/portfolio/galaxi-carpet.webp";
 
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
@@ -29,36 +30,46 @@ import redux from "../img/redux.png";
 export const imgPortfolio = [
   {
     id: 1,
+    img: imgGalaxicarpet,
+    title: "Galaxi Carpet - Project Freelance",
+    category: "Front End",
+    technologies: ["Next Js", "Tailwind", "Aos"],
+    demo: "https://galaxicarpet.vercel.app/home",
+    sourceCode: "https://github.com/Davitaridani/galaxicarpet",
+    delayAos: 100,
+  },
+  {
+    id: 2,
     img: imgRestApi,
     title: "Rest Api - Server Local",
     category: "Front End",
     technologies: ["React", "Axios", "Json-Server", "Scss", "Bootstrap"],
     demo: "https://restapi-crud.vercel.app/",
     sourceCode: "https://github.com/Davitaridani/crud-restapi",
-    delayAos: 100,
+    delayAos: 200,
   },
   {
-    id: 2,
+    id: 3,
     img: imgMyFirniture,
     title: "My Firniture",
     category: "Front End",
     technologies: ["React", "Redux", "Axios", "Scss", "Bootstrap", "Aos"],
     demo: "https://myfiniture.vercel.app/home",
     sourceCode: "https://github.com/Davitaridani/my-furniture/",
-    delayAos: 200,
+    delayAos: 300,
   },
   {
-    id: 3,
+    id: 4,
     img: imgGoldenStore,
     title: "Web App Golden Store",
     category: "Front End",
     technologies: ["React", "Scss", "Bootstrap", "Aos", "Swiper"],
     demo: "https://golden-store.vercel.app/",
     sourceCode: "https://github.com/Davitaridani/golden-store",
-    delayAos: 300,
+    delayAos: 400,
   },
   {
-    id: 4,
+    id: 5,
     img: imgMeetupDesigner,
     title: "Meetup Designer",
     category: "Front End",
@@ -68,7 +79,7 @@ export const imgPortfolio = [
     delayAos: 100,
   },
   {
-    id: 5,
+    id: 6,
     img: imgHooBank,
     title: "Hook Bank",
     category: "Front End",
@@ -78,7 +89,7 @@ export const imgPortfolio = [
     delayAos: 200,
   },
   {
-    id: 5,
+    id: 7,
     img: imgGame,
     title: "Game - Landing Page",
     category: "Front End",

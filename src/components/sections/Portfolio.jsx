@@ -49,7 +49,7 @@ const Portfolio = () => {
 					{portfolio?.slice(0, nextItems)?.map((portfolio, index) => (
 						<div key={index} className="group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.3%] relative z-[1]" data-aos="fade-up" data-aos-duration="1500" data-aos-delay={portfolio.delayAos} data-aos-offset="200">
 							<div className="img-portfolio overflow-hidden">
-								<img src={portfolio.img} alt="portfolio" className="rounded-[8px] group-hover:scale-110 ease-in-out duration-500 cursor-pointer mb-2 md:mb-1 h-auto w-full md:h-56" />
+								<img src={portfolio.img} alt="portfolio" className="rounded-[8px] group-hover:scale-110 ease-in-out duration-500 cursor-pointer mb-2 md:mb-1 h-auto w-full lg:h-56" />
 							</div>
 							<div className="p-3">
 								<h3 className="text-[17px] md:text-[20px] font-semibold md:mb-4 mb-2 text-headingColor">{portfolio.title}</h3>
@@ -69,7 +69,6 @@ const Portfolio = () => {
 										rel="noreferrer"
 										className="flex items-center gap-1 bg-primaryColor rounded-[8px] py-[6px] px-[9px] md:py-2 md:px-3 font-medium text-white text-[13px] md:text-sm hover:bg-smallTextColor ease-in duration-200" href={portfolio.demo}><TbWorldWww /> Demo
 									</a>
-
 									<a
 										href={portfolio.sourceCode}
 										target="_blank"
@@ -83,9 +82,9 @@ const Portfolio = () => {
 					))}
 				</div>
 
-				<div className="text-center mt-8">
+				<div className="text-center mt-5">
 					{nextItems < portfolio.length && imgPortfolio.length > 6 &&
-						<button onClick={handleLoadMore} className="text-white bg-smallTextColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-medium ease-in duration-300">Load More</button>
+						<button onClick={handleLoadMore} className="text-white bg-smallTextColor hover:bg-smallTextColor py-2 px-3 rounded-[8px] font-medium ease-in duration-300 mb-8">Load More</button>
 					}
 				</div>
 			</div >
