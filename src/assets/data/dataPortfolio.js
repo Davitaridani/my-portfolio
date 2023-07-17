@@ -34,7 +34,7 @@ export const imgPortfolio = [
     title: "Galaxi Carpet - Project Freelance",
     category: "Front End",
     technologies: ["Next Js", "Tailwind", "Aos"],
-    demo: "https://galaxicarpet.vercel.app/home",
+    demo: "https://galaxicarpet.com/home",
     sourceCode: "https://github.com/Davitaridani/galaxicarpet",
     delayAos: 100,
   },
