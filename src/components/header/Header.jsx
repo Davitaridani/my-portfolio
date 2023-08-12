@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logoProfile from "../../assets/img/profile-about.jpg";
+import logoProfile from "../../assets/img/profile-about.webp";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 

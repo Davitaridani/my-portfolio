@@ -19,8 +19,8 @@ const Skill = () => {
 					<div className="w-full mx-0 lg:mx-12 md:mx-0 mb-12 md:mb-0">
 						<h3 className="flex justify-center items-center gap-1 text-center text-[24px] md:text-2xl font-semibold mb-6 text-headingColor"><span><MdMonitor /></span> Front End</h3>
 						<div className="grid grid-cols-3 md:grid-cols-4 gap-2 md:gap-1">
-							{imgSkill[0].frontEnd.map(({ id, img, title, text, delayAos }) => (
-								<div className="text-center mb-4" key={id}>
+							{imgSkill[0].frontEnd.map(({ img, title, text, delayAos }, index) => (
+								<div className="text-center mb-4" key={index}>
 									<div data-aos="zoom-in" data-aos-duration="2000" data-aos-offset="150" data-aos-delay={delayAos}>
 										<img src={img} alt="icon" className="mx-auto flex justify-center h-8 mb-3 object-contain  hover:scale-125 duration-300 ease-in  cursor-pointer animate-pulse" />
 									</div>

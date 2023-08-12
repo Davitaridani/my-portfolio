@@ -12,20 +12,20 @@ import { GrFacebookOption } from "react-icons/gr";
 import { FaGitlab } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
-import html from "../img/html.png";
-import css from "../img/css.png";
-import js from "../img/js.png";
-import scss from "../img/scss.png";
-import bs from "../img/bs.png";
-import tailwind from "../img/tailwind.png";
-import react from "../img/react.png";
-import git from "../img/git.png";
-import figma from "../img/figma.png";
-import npm from "../img/npm.png";
-import ps from "../img/ps.png";
-import express from "../img/expressjs.png";
-import nodeJs from "../img/node-js.png";
-import redux from "../img/redux.png";
+import html from "../img/html.webp";
+import css from "../img/css.webp";
+import js from "../img/js.webp";
+import scss from "../img/scss.webp";
+import bs from "../img/bs.webp";
+import tailwind from "../img/tailwind.webp";
+import react from "../img/react.webp";
+import git from "../img/git.webp";
+import figma from "../img/figma.webp";
+import ps from "../img/ps.webp";
+import express from "../img/expressjs.webp";
+import nodeJs from "../img/node-js.webp";
+import redux from "../img/redux.webp";
+import nextJs from "../img/next-js.webp";
 
 export const imgPortfolio = [
   {
@@ -102,7 +102,7 @@ export const imgPortfolio = [
 
 export const qualification = [
   {
-    year: "Juli 2023 - Agust 2023 / NOW",
+    year: "Juli 2023 - Agust 2023",
     school: "Gamic Studio - Kamboja ",
     text: "Employee",
   },
@@ -159,42 +159,43 @@ export const iconHero = [
 export const imgSkill = [
   {
     frontEnd: [
-      { id: 1, img: html, title: "Html", text: "Advance", delayAos: 50 },
-      { id: 2, img: css, title: "Css", text: "Advance", delayAos: 150 },
-      { id: 3, img: js, title: "JS/ES6", text: "Intermediate", delayAos: 250 },
-      { id: 4, img: scss, title: "Scss", text: "Intermediate", delayAos: 350 },
-      { id: 5, img: bs, title: "Bootstrap", text: "Advance", delayAos: 50 },
+      { img: html, title: "Html", text: "Advance", delayAos: 50 },
+      { img: css, title: "Css", text: "Advance", delayAos: 150 },
+      { img: js, title: "JS/ES6", text: "Intermediate", delayAos: 250 },
+      { img: scss, title: "Scss", text: "Intermediate", delayAos: 350 },
+      { img: bs, title: "Bootstrap", text: "Advance", delayAos: 50 },
       {
-        id: 6,
         img: tailwind,
         title: "Tailwind",
         text: "Intermediate",
         delayAos: 150,
       },
       {
-        id: 7,
         img: react,
         title: "React Js",
         text: "Intermediate",
         delayAos: 250,
       },
       {
-        id: 8,
-        img: redux,
-        title: "Redux",
+        img: nextJs,
+        title: "Next Js",
         text: "Intermediate",
         delayAos: 350,
       },
       {
-        id: 9,
-        img: git,
-        title: "Git",
+        img: redux,
+        title: "Redux",
         text: "Intermediate",
         delayAos: 50,
       },
-      { id: 10, img: figma, title: "Figma", text: "Basic", delayAos: 150 },
-      { id: 12, img: ps, title: "PS", text: "Basic", delayAos: 250 },
-      { id: 12, img: npm, title: "NPM", text: "Intermediate", delayAos: 350 },
+      {
+        img: git,
+        title: "Git",
+        text: "Intermediate",
+        delayAos: 150,
+      },
+      { img: figma, title: "Figma", text: "Basic", delayAos: 250 },
+      { img: ps, title: "PS", text: "Basic", delayAos: 350 },
     ],
   },
   {

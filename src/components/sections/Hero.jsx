@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { BsCloudArrowDownFill } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { TbApps } from "react-icons/tb";
-import imgHero from "../../assets/img/profile.jpg";
+import imgHero from "../../assets/img/profile.webp";
 import { iconHero } from "../../assets/data/dataPortfolio";
 import myCV from "../../assets/img/Ahmat Davit Ari Dani_CV.pdf";
 import AOS from 'aos';
