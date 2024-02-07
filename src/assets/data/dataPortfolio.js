@@ -5,6 +5,8 @@ import imgMyFirniture from "../img/portfolio/my-furniture.webp";
 import imgRestApi from "../img/portfolio/crud-restapi.webp";
 import imgGame from "../img/portfolio/game.jpg";
 import imgGalaxicarpet from "../img/portfolio/galaxi-carpet.webp";
+import imgAgp from "../img/portfolio/agp.webp";
+
 
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
@@ -29,7 +31,15 @@ import nextJs from "../img/next-js.webp";
 
 export const imgPortfolio = [
   {
-    id: 1,
+    img: imgAgp,
+    title: "AGP - Project Freelance",
+    category: "Front End",
+    technologies: ["Next Js", "Tailwind", "Aos"],
+    demo: "https://agp.vercel.app/",
+    sourceCode: "https://github.com/Davitaridani/agp",
+    delayAos: 50,
+  },
+  {
     img: imgGalaxicarpet,
     title: "Galaxi Carpet - Project Freelance",
     category: "Front End",
@@ -39,7 +49,6 @@ export const imgPortfolio = [
     delayAos: 100,
   },
   {
-    id: 2,
     img: imgRestApi,
     title: "Rest Api - Server Local",
     category: "Front End",
@@ -49,7 +58,6 @@ export const imgPortfolio = [
     delayAos: 200,
   },
   {
-    id: 3,
     img: imgMyFirniture,
     title: "My Firniture",
     category: "Front End",
@@ -59,7 +67,6 @@ export const imgPortfolio = [
     delayAos: 300,
   },
   {
-    id: 4,
     img: imgGoldenStore,
     title: "Web App Golden Store",
     category: "Front End",
@@ -69,7 +76,6 @@ export const imgPortfolio = [
     delayAos: 400,
   },
   {
-    id: 5,
     img: imgMeetupDesigner,
     title: "Meetup Designer",
     category: "Front End",
@@ -79,7 +85,6 @@ export const imgPortfolio = [
     delayAos: 100,
   },
   {
-    id: 6,
     img: imgHooBank,
     title: "Hook Bank",
     category: "Front End",
@@ -89,7 +94,6 @@ export const imgPortfolio = [
     delayAos: 200,
   },
   {
-    id: 7,
     img: imgGame,
     title: "Game - Landing Page",
     category: "Front End",
